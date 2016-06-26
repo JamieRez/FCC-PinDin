@@ -9,7 +9,6 @@ var mongoose = require('mongoose');
 var cookieParser = require('cookie-parser');
 var session      = require('express-session');
 var configDB = require('./config/database.js');
-var jade = require('jade');
 
 
 mongoose.connect(configDB.url, function(){
