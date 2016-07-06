@@ -1,6 +1,13 @@
-doctype html
-html
-  head
-    title PinDin | Pin your food!
-  body
-    h1 PinDin
+extends ./layout.pug
+
+block content
+
+    .container
+
+      .loginScreen
+        #google.loginBtn(role='button')
+          img(src='/google.svg')
+          | Sign In With Google
+        #twitter.loginBtn(role='button')
+          img(src='/twitter.svg')
+          | Sign In With Twitter
