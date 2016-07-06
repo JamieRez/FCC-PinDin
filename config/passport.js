@@ -43,7 +43,6 @@ module.exports = function(passport) {
     callbackURL: configAuth.googleAuth.callbackURL,
   },
   function(token, tokenSecret, profile, done) {
-    console.log(profile);
     User.findOne({twitterId : profile.id}, function(err,user){
       if(err)throw err;
 
