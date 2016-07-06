@@ -9,7 +9,7 @@ function init(app,passport){
 
 
 	app.route('/').get(function(req,res){
-			//userjs.deleter();
+		//	userjs.deleter();
 			res.render(path + '/views/index.pug' , {user : req.user});
 	});
 
