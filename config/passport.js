@@ -40,7 +40,7 @@ module.exports = function(passport) {
   passport.use(new TwitterStrategy({
     consumerKey: configAuth.twitterAuth.clientID,
     consumerSecret: configAuth.twitterAuth.clientSecret,
-    callbackURL: configAuth.googleAuth.callbackURL,
+    callbackURL: configAuth.twitterAuth.callbackURL,
   },
   function(token, tokenSecret, profile, done) {
     User.findOne({twitterId : profile.id}, function(err,user){
