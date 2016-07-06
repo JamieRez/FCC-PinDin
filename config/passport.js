@@ -49,6 +49,8 @@ module.exports = function(passport) {
       if(!user){
         user = new User({
           twitterId : profile.id,
+          name : profile.name,
+          email : profile.email
         });
         user.save(function(err){
           if(err) throw err;
