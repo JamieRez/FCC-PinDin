@@ -2,7 +2,7 @@ module.exports = {
   'googleAuth' : {
         'clientID'      : '695892785116-q2qonkmvas0n9j406or91jrhmgbqd4uq.apps.googleusercontent.com',
         'clientSecret'  : 'LDzIzG5suZhfbYGcHOG_Hp8J',
-        'callbackURL'   : 'http://localhost:3000/auth/google/callback'
+        'callbackURL'   : 'https://pin-din-fcc.herokuapp.com/auth/google/callback'
   },
   'twitterAuth' : {
     'clientID'      : 'TTWBhCflFEyP4u5H1oU4RfePi',

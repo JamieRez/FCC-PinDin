@@ -1,17 +1,64 @@
+@font-face {
+  font-family : pizza;
+  src : url('pizza.ttf');
+}
+
+html{
+-webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+}
+
+body{
+  background-color: #8e91b8;
+}
+
+nav.navbar.navbar-default.navbar-static-top{
+  background-color : #d0d1e2;
+  border-color : #d0d1e2;
+}
+
+h1.nav.navbar-nav.navbar-brand{
+  font-family : pizza;
+  margin-bottom : -5px;
+  font-weight: bold;
+  font-size: 20px;
+  color : #4d7fd5;
+}
+
+h1.nav.navbar-nav.navbar-brand:hover{
+  color : #3970d0;
+}
+
+ul.nav.navbar-nav.navbar-right li a{
+  color : #4d7fd5;
+  font-weight: bold;
+}
+
+ul.nav.navbar-nav.navbar-right li a:hover{
+  color : #3970d0;
+}
+
+
+
 .loginScreen{
   display : none;
-  border : 2px solid grey;
+  position : absolute;
+  left : 0;
+  right : 0;
+  z-index: 1;
+  border : 2px solid #4b4e77;
   border-radius : 20px;
-  background-color: white;
-  width : 50%;
+  background-color: rgba(89, 94, 166, 0.72);
+  width : 30%;
   margin-left: auto;
   margin-right: auto;
-  padding : 25px 0px 10px 0px;
+  padding : 35px 0px 20px 0px;
 }
 
 .loginBtn{
   font-size : 20px;
   padding : 10px;
+  background-color: white;
   text-align: center;
   border : 2px solid grey;
   border-radius : 10px;
@@ -32,4 +79,106 @@
 }
 #twitter:hover{
   border-color: #808cff;
+}
+
+.uploadScreen{
+  display : none;
+  position : absolute;
+  left : 0;
+  right : 0;
+  z-index: 1;
+  border : 2px solid #4b4e77;
+  border-radius : 20px;
+  background-color: rgba(89, 94, 166, 0.72);
+  margin-left: auto;
+  margin-right: auto;
+  width : 50%;
+  padding : 20px 20px 20px 20px;
+}
+
+#uploadImg{
+  max-width : 90%;
+  width : 100%;
+  height : auto;
+  min-height : 400px;
+  max-height : 60%;
+  background-color: white;
+  display : block;
+  margin-left : auto;
+  margin-right: auto;
+}
+
+.uploadForm{
+  color : white;
+  font-weight: 700;
+  display : inline-block;
+  margin-top : 15px;
+  width : 70%;
+}
+
+.uploadBtn{
+  font-weight : bold;
+  margin-left : 90px;
+  width : 20%;
+  display : inline-block;
+}
+
+#label{
+  color : white;
+  padding-bottom: 10px;
+  margin-bottom : 10px;
+  border-bottom: 3px solid #5c6093;
+}
+
+.grid-sizer{
+  width : 20%;
+}
+
+.grid-item{
+  border : 2px solid #2a2c46;
+  border-radius : 10px;
+  background-color : #c7c9e5;
+  width : 20%;
+  padding : 10px 5px 0px 5px;
+}
+
+.pinImg{
+  display : block;
+  width : 100%;
+  height : auto;
+  margin-left : auto;
+  margin-right: auto;
+}
+
+.pinTitle{
+  font-size : 17px;
+  text-align : center;
+  color : #454aa5;
+}
+
+.pinUser{
+  text-align : center;
+  color : #494c79
+}
+
+#userId{
+  display : none;
+}
+
+#pinId{
+  display : none;
+}
+
+.delete{
+  display : none;
+  margin-left : 60px;
+  margin-bottom: 5px;
+  margin-top : 5px;
+}
+
+#logout{
+  font-size : 20px;
+  font-weight : bold;
+  float : right;
+  color : white;
 }

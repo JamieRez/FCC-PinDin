@@ -1,0 +1,15 @@
+extends ./layout.pug
+
+block content
+
+  .container
+
+    .pinDisplay
+      h2#label= pinsArr[0].userName + "'s Dins"
+
+      .grid
+        each pin in pinsArr
+          .grid-item
+            img.pinImg(src=pin.imgUrl)
+            p.pinTitle=pin.title
+            p.pinUser(role='button')=pin.userName

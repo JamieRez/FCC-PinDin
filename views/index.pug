@@ -11,3 +11,22 @@ block content
         #twitter.loginBtn(role='button')
           img(src='/twitter.svg')
           | Sign In With Twitter
+
+      .uploadScreen
+        img#uploadImg(src='' width='100%' height='500px')
+        label.uploadForm Image Url
+          input#uploadLink.form-control(type='text' , placeholder = 'Link to image')
+        label.uploadForm Title
+          input#uploadTitle.form-control(type='text' , placeholder = 'Spaghetti')
+        .uploadBtn.btn.btn-success Pin Din
+
+      .pinDisplay
+        h2#label Recent Dins
+
+        .grid
+          each pin in pinsArr
+            .grid-item
+              img.pinImg(src=pin.imgUrl)
+              p.pinTitle=pin.title
+              p.pinUser(role='button')=pin.userName
+              p#userId=pin.userId

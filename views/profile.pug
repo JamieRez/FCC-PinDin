@@ -1,0 +1,18 @@
+extends ./layout.pug
+
+block content
+
+  .container
+    a#logout(href='/logout') Log Out
+
+    .pinDisplay
+      h2#label Your Dins
+
+      .grid
+        each pin in pinsArr
+          .grid-item
+            img.pinImg(src=pin.imgUrl)
+            .btn.btn-danger.delete Delete Pin
+            p.pinTitle=pin.title
+            p.pinUser(role='button')=pin.userName
+            p#pinId= pin.id
