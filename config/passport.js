@@ -43,14 +43,13 @@ module.exports = function(passport) {
     callbackURL: configAuth.twitterAuth.callbackURL,
   },
   function(token, tokenSecret, profile, done) {
-    console.log(profile);
     User.findOne({twitterId : profile.id}, function(err,user){
       if(err)throw err;
 
       if(!user){
         user = new User({
           twitterId : profile.id,
-          name : profile.name
+          name : profile.displayName
         });
         user.save(function(err){
           if(err) throw err;
